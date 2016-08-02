@@ -1,0 +1,34 @@
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.dll
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.dll
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pdb
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pdb
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\DistanceValue.dll
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\DistanceValue.pdb
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pe
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pdbx
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pe
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pdbx
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\be\DistanceValue.pe
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\be\DistanceValue.pdbx
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pe
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pdbx
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.dll
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.pdb
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Dropbox\Trigger\Lidar-Trigger-Debug\DistanceValue\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.dll
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.dll
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pdb
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pdb
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\DistanceValue.dll
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\DistanceValue.pdb
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pe
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\le\DistanceValue.pdbx
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pe
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\bin\Debug\be\DistanceValue.pdbx
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.dll
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.pdb
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\be\DistanceValue.pe
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\be\DistanceValue.pdbx
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pe
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pdbx

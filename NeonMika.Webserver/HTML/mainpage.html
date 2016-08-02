@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<title>INEX Trigger Configuration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="js/jquery-ui.min.css">
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script> 
+<style>
+.config-tab {display:none;}
+.tab-bold {font-weight: bold;}
+.input-username, .input-password,.input-static-ip, .input-timeoffset, .input-ntp,.input-gateway, .input-network-mask {width: 100%;}
+.dhcp-enabled,.dhcp-disabled {
+    border-color: darkgray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.submit-form {
+	border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Vertical Tabs Style =================================== */
+  .ui-tabs-vertical { width: 55em; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+  
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+  {
+      border: 3px solid #525050 !important; 
+  }
+  
+  .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited
+  {
+      color: #ff0000 !important;
+	  font-weight: bolder !important;
+  }
+  
+  .ui-tabs .ui-tabs-nav li.ui-tabs-active
+  {
+	margin-left: 2px !important
+  }
+/* End of vertical tabs style ================================ */
+</style>
+<body class="w3-container">
+
+<h2>INEX Lidar Trigger Configuration</h2>
+
+<div class="w3-row">
+  <a href="#" onclick="openConfigTab(event, 'network');">
+    <div id=div-network class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">System and Network Configuration</div>
+  </a>
+  <a href="#" onclick="openConfigTab(event, 'distance');">
+    <div id=div-distance class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Trigger and Distance Configuration</div>
+  </a>
+  <a href="#" onclick="openConfigTab(event, 'upload');">
+    <div id=div-upload class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Firmware Upload</div>
+  </a>
+</div>
+
+<div id="network" class="w3-container config-tab">
+  <h2>System and Network Configuration </h2>
+	<div class="w3-row">
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+				<p>Username</p>
+		</div>
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center ">
+			<p>
+				<input type="text" name="username" class="input-username">
+			</p>
+		</div>
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+			<p>Password</p>
+		</div>
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+			<p>
+				<input type="password" name="password" class="input-password">
+			</p>
+		</div>
+		<div class="w3-col  s8 m8 l8 w3-yellow w3-center">
+			<p></p>
+		</div>		
+	</div>
+	<div id="div-dhcp-enable">
+		<div class="w3-row">
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>DHCP</p>
+			</div>
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>
+						<input id="dhcp-value" type="checkbox" name="dhcp" onchange="dhcpChange()" >
+					</p>
+			</div>
+			<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+				<p></p>
+			</div>			
+		</div>
+	</div>
+	<div id=dhcp-disabled class=dhcp-disabled>
+		<div class="w3-row">
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>Static IP</p>
+			</div>
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>
+						<input id=input-static-ip type="text" name="static-ip" class="input-static-ip">
+					</p>
+			</div>
+			<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+				<p></p>
+			</div>			
+		</div>
+		<div class="w3-row">
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>Network Mask</p>
+			</div>
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>
+						<input id=input-network-mask type="text" name="network-mask" class="input-network-mask">
+					</p>
+			</div>
+			<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+				<p></p>
+			</div>			
+		</div>	
+		<div class="w3-row">
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>Gateway</p>
+			</div>
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>
+						<input id=input-gateway type="text" name="Gateway" class="input-gateway">
+					</p>
+			</div>
+			<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+				<p></p>
+			</div>			
+		</div>
+	</div>
+	<div class="w3-row">
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+				<p>NTP Server IP</p>
+		</div>
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+				<p>
+					<input id=input-ntp type="text" name="ntp" class="input-ntp">
+				</p>
+		</div>
+		<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+			<p></p>
+		</div>			
+	</div>
+	<div class="w3-row">
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+				<p>Time Zone Offset</p>
+		</div>
+		<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+				<p>
+					<input id=input-timeoffset type="text" name="timeoffset" class="input-timeoffset">
+				</p>
+		</div>
+		<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+			<p></p>
+		</div>			
+	</div>
+	
+	<div class="submit-form">
+		<div class="w3-row">
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>Submit Configuration</p>
+			</div>
+			<div class="w3-col  s1 m1 l1 w3-yellow w3-center">
+					<p>
+						<input id=submit-=network type="submit" value="Submit" onclick="submitNetwork()">
+					</p>
+			</div>
+			<div class="w3-col  s10 m10 l10 w3-yellow w3-center">
+				<p></p>
+			</div>			
+		</div>	
+	</div>	
+</div>
+
+<div id="distance" class="w3-container config-tab">
+	 <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h2>Content heading 1</h2>
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <h2>Content heading 2</h2>
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <h2>Content heading 3</h2>
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+	</div>
+</div>
+
+<div id="upload" class="w3-container config-tab">
+  <h2>Firmware Upload</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+$(document).ready(function(){ 
+	openConfigTab(event, "network");
+	dhcpChange();
+	// add vertical tabs
+	$('#tabs').tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+	$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+}) 
+
+function ValidateIPaddress(ipaddress)   
+{  
+ if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress))  
+  {  
+    return (true)  
+  }  
+  alert("You have entered an invalid IP address!")  
+  return (false)  
+}  
+
+function submitNetwork()
+{
+	var _inputCheck = true;
+	if ( ValidateIPaddress ($("#input-static-ip").val()) == false )
+		return;
+	if ( ValidateIPaddress ($("#input-network-mask").val()) == false )
+		return;
+	if ( ValidateIPaddress ($("#input-gateway").val()) == false )
+		return;
+	if ( ValidateIPaddress ($("#input-ntp").val()) == false )
+		return;
+	console.debug("networks submit");
+}
+function dhcpChange() {
+	if ($("#dhcp-value").prop("checked") == true )
+	{
+		$("#dhcp-disabled").hide();
+		$("#div-dhcp-enable").addClass("dhcp-enabled");
+	}
+	else
+	{
+		$("#dhcp-disabled").show();
+		$("#div-dhcp-enable").removeClass("dhcp-enabled");
+	}
+}
+
+function openConfigTab(event, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("config-tab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+	 tablinks[i].className = tablinks[i].className.replace(" tab-bold", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  document.getElementById("div-"+tabName).className += " w3-border-red";
+  document.getElementById("div-"+tabName).className += " tab-bold";
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head><title>" + e.URL + "</title>" +
+  <style type=\"text/css\">
+	input[type=\"button\"]{margin-top: 10px;margin-left: 20px;}
+	a1{background-color:#ADD8E6;margin:0;padding:0;font-weight:bold;}
+	a.a2{background-color:#87CEEB;margin:0;padding:0;font-weight:bold;}
+  </style>
+<body>
+                                  <div id=""response""></div>
+                                
+                                <script>
+                                      $(window).load(function(e) 
+                                            {
+                                                $(""#response"").text(""clear"");
+	                                        }
+                                        )
+		                                function sendAjax()
+		                                {
+			                                var request = $.ajax({
+			                                 url: ""fileslist"",
+			                                type: ""GET"",
+			                                data: {text : ""testtext""},
+			                                success: function (event)
+			                                         {
+				                                        var e = event;
+                                                        var str = """";
+				                                        // $(""#response"").text(event.distance);
+                                                        for(var propertyName in e) {
+                                                                // propertyName is what you want
+                                                                // you can get the value like this: myObject[propertyName]
+                                                                str += propertyName+"" ""+ e[propertyName].replace(/\\/g,""/"")+"" "";
+                                                            }
+$(""#response"").text(str);
+			                                        },
+			                                error: function(event)
+			                                {
+			                                var e = event;
+			   
+			                                }
+                                          })
+			                            };
+	
+	
+                               </script>
+
+  <table><tr><td id=\"file" + numFile + "\"" + ">" + f + "</td><td><input type=\"checkbox\" id=\"chbox" + numFile + "\"" + "/></td></tr>
+                
+</table><input type=\"hidden\" id=\"filepath\" value=\"\"><input class=\"block1\" type=\"submit\"  onclick=\"delsel()\" value=\"Delete\" />
+</body>
+</html>"
