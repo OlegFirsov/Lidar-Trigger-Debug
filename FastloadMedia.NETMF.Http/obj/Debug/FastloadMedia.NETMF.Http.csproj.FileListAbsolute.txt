@@ -66,3 +66,5 @@ C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\Fastlo
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\FastloadMedia.NETMF.Http\obj\Debug\be\FastloadMedia.NETMF.Http.pdbx
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\FastloadMedia.NETMF.Http\obj\Debug\le\FastloadMedia.NETMF.Http.pe
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\FastloadMedia.NETMF.Http\obj\Debug\le\FastloadMedia.NETMF.Http.pdbx
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\FastloadMedia.NETMF.Http\obj\Debug\FastloadMedia.NETMF.Http.csprojResolveAssemblyReference.cache
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\FastloadMedia.NETMF.Http\obj\Debug\TinyCLR_DebugReferences.cache

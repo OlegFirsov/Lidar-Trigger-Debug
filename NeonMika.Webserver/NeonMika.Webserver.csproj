@@ -45,6 +45,8 @@
     <Compile Include="Responses\ComplexResponses\FileUpload.cs" />
     <Compile Include="Responses\ComplexResponses\IndexResponse.cs" />
     <Compile Include="Responses\ComplexResponses\ReadLidar.cs" />
+    <Compile Include="Responses\ComplexResponses\SaveSystemNetworkSettings.cs" />
+    <Compile Include="Responses\ComplexResponses\ShowSystemNetworkSettings.cs" />
     <Compile Include="Responses\FileResponse.cs" />
     <Compile Include="Responses\JSONResponse.cs" />
     <Compile Include="Responses\Response.cs" />

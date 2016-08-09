@@ -369,6 +369,7 @@ namespace NeonMika.Webserver
             AddResponse(new DeleteFile("deletefile"));
             AddResponse(new FilesList("fileslist"));
             AddResponse(new Config("config"));
+            AddResponse(new SaveSystemNetworkSettings("savesystemnetworksettings"));
             // Create Response and pass DistanceValue object 
             AddResponse(new ReadLidar("readlidar"));
             ReadLidar r = (ReadLidar) responses["readlidar"];

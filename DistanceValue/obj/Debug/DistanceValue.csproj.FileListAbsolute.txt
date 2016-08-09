@@ -32,3 +32,5 @@ C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\Distan
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\be\DistanceValue.pdbx
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pe
 C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\le\DistanceValue.pdbx
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\DistanceValue.csprojResolveAssemblyReference.cache
+C:\Users\alex-2\Documents\Visual Studio 2013\Projects\Lidar-Trigger-Debug\DistanceValue\obj\Debug\TinyCLR_DebugReferences.cache
